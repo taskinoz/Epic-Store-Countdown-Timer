@@ -8,9 +8,12 @@ class GameContainer extends React.Component {
           <img src="" />
         </div>
         <div className="game-info">
-
+          <h2></h2>
         </div>
       </section>
     )
   }
 }
+
+// Exporting the component
+export default GameContainer;
