@@ -26,9 +26,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <section id="game-containers">
+      <div id="game-containers">
         {gameMap}
-      </section>
+      </div>
       <Footer />
     </div>
   );
