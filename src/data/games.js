@@ -1,7 +1,11 @@
+import metroExodus from '../gametiles/metro-exodus.jpg';
+import theWalkingDead from '../gametiles/walking-dead.jpg';
+import theOuterWorlds from '../gametiles/the-outer-worlds.jpg';
+
 export const games = [
 	{
 		name: 'Metro Exodus',
-		image: '../gametiles/metro-exodus.jpg',
+		image: metroExodus,
 		epicRelease: new Date(2019, 1, 15),
 		steamRelease: new Date(2020, 1, 15),
 		epicLink: 'https://www.epicgames.com/store/en-US/product/metro-exodus/home',
@@ -10,7 +14,7 @@ export const games = [
 	},
 	{
 		name: 'The Walking Dead: The Final Season',
-		image: '../gametiles/walking-dead.jpg',
+		image: theWalkingDead,
 		epicRelease: new Date(2019, 0, 15),
 		steamRelease: new Date(2020, 0, 15),
 		epicLink: 'https://www.epicgames.com/store/en-US/product/walking-dead-final-season/home',
@@ -19,7 +23,7 @@ export const games = [
 	},
 	{
 		name: 'The Outer Worlds',
-		image: '../gametiles/the-outer-worlds.jpg',
+		image: theOuterWorlds,
 		epicRelease: new Date(2019, 9, 25),
 		steamRelease: new Date(2020, 9, 25),
 		epicLink: 'https://www.epicgames.com/store/en-US/product/the-outer-worlds/home',
