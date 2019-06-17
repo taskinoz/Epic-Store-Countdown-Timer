@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './ProgressBar.scss';
 
 export const ProgressBar = (props) => {
@@ -16,3 +17,13 @@ class ProgressFiller extends React.Component {
 		return <div className="progress-child" style={{backgroundGradient}}>{percentageWithPercent}</div>;
 	}
 }
+
+ProgressBar.propTypes = {
+	percentage: PropTypes.number.isRequired,
+	height: PropTypes.number.isRequired,
+	width: PropTypes.number.isRequired
+};
+
+ProgressFiller.propTypes = {
+	percentage: PropTypes.number.isRequired
+};

@@ -9,7 +9,7 @@ export class Footer extends React.Component{
           and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.<br/>
           ©2019, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo are trademarks
           or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere.<br/>
-          ©2019 Microsoft Corporation. Xbox and the Xbox "Sphere" Design are trademarks and/or registered
+          ©2019 Microsoft Corporation. Xbox and the Xbox &quot;Sphere&quot; Design are trademarks and/or registered
           trademarks of Microsoft Corporation in the U.S. and/or other countries.<br/>
           Other brands or product names are the trademarks of their respective owners.
 				</p>
