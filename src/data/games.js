@@ -10,7 +10,7 @@ export const games = [
 		steamRelease: new Date(2020, 1, 15),
 		epicLink: 'https://www.epicgames.com/store/en-US/product/metro-exodus/home',
 		steamLink: 'https://store.steampowered.com/app/412020/Metro_Exodus/',
-		xboxLink: ''
+		xboxLink: 'https://www.microsoft.com/p/metro-exodus-windows/9p60kl3mhcnh'
 	},
 	{
 		name: 'The Walking Dead: The Final Season',
@@ -28,6 +28,6 @@ export const games = [
 		steamRelease: new Date(2020, 9, 25),
 		epicLink: 'https://www.epicgames.com/store/en-US/product/the-outer-worlds/home',
 		steamLink: 'https://store.steampowered.com/app/578650/The_Outer_Worlds/',
-		xboxLink: ''
+		xboxLink: 'https://www.microsoft.com/p/the-outer-worlds/9mwd2z8l1fbq'
 	}
 ];
