@@ -1,6 +1,6 @@
 import React from 'react';
 
-class GameContainer extends React.Component {
+export class GameContainer extends React.Component {
   render() {
     return (
       <section>
@@ -14,6 +14,3 @@ class GameContainer extends React.Component {
     )
   }
 }
-
-// Exporting the component
-export default GameContainer;
