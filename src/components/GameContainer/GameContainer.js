@@ -5,10 +5,10 @@ export class GameContainer extends React.Component {
     return (
       <section>
         <div className="game-image">
-          <img src="" />
+          <img src={this.props.image} />
         </div>
         <div className="game-info">
-          <h2></h2>
+          <h2>{this.props.name}</h2>
         </div>
       </section>
     )

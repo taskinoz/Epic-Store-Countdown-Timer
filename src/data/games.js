@@ -1,4 +1,4 @@
-const games = [
+export const games = [
 	{
 		name: 'Metro Exodus',
 		image: '../gametiles/metro-exodus.jpg',
@@ -27,5 +27,3 @@ const games = [
 		xboxLink: ''
 	}
 ];
-
-export default games;
