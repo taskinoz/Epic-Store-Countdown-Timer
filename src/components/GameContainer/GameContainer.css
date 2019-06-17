@@ -1,0 +1,30 @@
+.game-container{
+  display: flex;
+  align-items: center;
+  margin: 20px 20%;
+}
+@media screen and (max-width: 767px) {
+  .game-container{
+    margin: 20px 10%;
+  }
+}
+@media screen and (max-width: 565px) {
+  .game-container{
+    margin: 20px 10px;
+  }
+}
+.game-image,
+.game-info,
+.availibility-timer,
+.game-links{
+  padding: 10px;
+}
+.game-links div{
+  display: inline-flex;
+  text-align: center;
+}
+
+.game-links img{
+  height: 40px;
+  padding: 10px;
+}
