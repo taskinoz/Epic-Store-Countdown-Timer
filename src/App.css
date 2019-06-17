@@ -43,6 +43,14 @@
   margin: 5px 0;
 }
 
+.App-footer a {
+  color: #626262;
+}
+
+.App-footer a:hover {
+  color: #7e7e7e;
+}
+
 #trademarks {
   font-size: 15px;
 }
