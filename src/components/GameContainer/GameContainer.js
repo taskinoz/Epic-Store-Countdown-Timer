@@ -1,7 +1,7 @@
 import React from 'react';
 
 // CSS
-import "./GameContainer.css";
+import "./GameContainer.scss";
 
 // Store Icons
 import epicStore from "../../storeicons/epic_games_store.png";
