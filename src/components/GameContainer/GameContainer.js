@@ -12,14 +12,23 @@ import { StoreIcon } from '../StoreIcon/StoreIcon';
 export class GameContainer extends React.Component {
 
 	dateFormatter (date) {
+		if (typeof date !== 'object') {
+			return date;
+		}
 		return date.toLocaleDateString('en-AU', {year: '2-digit', day: '2-digit', month: 'short' }).replace(/ /g, '-');
 	}
 
 	gameAvailable(date) {
+		if (typeof date !== 'object') {
+			return false;
+		}
 		return date <= Date.now();
 	}
 
 	gamePercentage(epicDate, steamDate) {
+		if (typeof epicDate !== 'object') {
+			return 0;
+		}
 		const percentage = (Date.now() - epicDate) / (steamDate - epicDate) * 100;
 		if (percentage < 0) {
 			return 0;

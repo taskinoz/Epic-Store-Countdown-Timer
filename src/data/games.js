@@ -1,6 +1,7 @@
 import metroExodus from '../gametiles/metro-exodus.jpg';
 import theWalkingDead from '../gametiles/walking-dead.jpg';
 import theOuterWorlds from '../gametiles/the-outer-worlds.jpg';
+import untitledGooseGame from '../gametiles/untitled-goose-game.jpg';
 
 export const games = [
 	{
@@ -30,5 +31,13 @@ export const games = [
 		epicLink: 'https://www.epicgames.com/store/en-US/product/the-outer-worlds/home',
 		steamLink: 'https://store.steampowered.com/app/578650/The_Outer_Worlds/',
 		xboxLink: 'https://www.microsoft.com/p/the-outer-worlds/9mwd2z8l1fbq'
+	},
+	{
+		name: 'Untitled Goose Game',
+		image: untitledGooseGame,
+		epicRelease: 'Unknown',
+		steamRelease: 'Unknown',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/untitled-goose-game/home',
+		steamLink: 'https://store.steampowered.com/app/837470/Untitled_Goose_Game/'
 	}
 ];
