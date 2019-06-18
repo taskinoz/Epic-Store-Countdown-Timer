@@ -1,7 +1,7 @@
 .game-container{
   display: flex;
   align-items: center;
-  margin: 20px 20%;
+  // margin: 20px 20%;
 }
 @media screen and (max-width: 767px) {
   .game-container{
@@ -28,6 +28,7 @@
   color: white;
   text-align: left;
   min-width: 203px;
+  max-width: 203px;
 }
 
 .availibility-timer {
@@ -46,6 +47,7 @@
   color: #9f9f9f;
   min-width: 182px;
   font-size: 23px;
+  margin-right: 22px;
 }
 
 .game-dates p {
@@ -54,7 +56,7 @@
 }
 
 .game-release-date {
-  text-align: right;
+  float: right;
   font-weight: 400;
 }
 
@@ -72,4 +74,8 @@
 .game-links img{
   height: 100%;
   padding: 10px;
+}
+
+.empty-icon {
+  width: 93px;
 }

@@ -25,6 +25,7 @@ export class GameContainer extends React.Component {
 				<img src={xboxStore} alt="XBOX Game Pass" />
 			</a>
 		</div>);
+		const emptyIcon = (<div className="empty-icon"></div>);
 		return (
 			<section className="game-container">
 				<div className="game-image">
@@ -56,7 +57,7 @@ export class GameContainer extends React.Component {
 							<img src={steamStore} alt="Steam" />
 						</a>
 					</div>
-					{this.props.xboxLink !== '' ? xboxIcon : ''}
+					{this.props.xboxLink !== '' ? xboxIcon : emptyIcon}
 				</div>
 			</section>
 		);
