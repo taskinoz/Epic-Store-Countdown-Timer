@@ -7,3 +7,5 @@
 - Add anchor tags and scrolling so you can link to games
 
 - Add animation when loading games
+
+- Mobile design
