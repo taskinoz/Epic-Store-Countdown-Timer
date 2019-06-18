@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // CSS
 import './GameContainer.scss';
@@ -42,3 +43,11 @@ export class GameContainer extends React.Component {
 		);
 	}
 }
+
+GameContainer.propTypes = {
+	image: PropTypes.string,
+	name: PropTypes.string.isRequired,
+	epicLink: PropTypes.string.isRequired,
+	steamLink: PropTypes.string.isRequired,
+	xboxLink: PropTypes.string
+};
