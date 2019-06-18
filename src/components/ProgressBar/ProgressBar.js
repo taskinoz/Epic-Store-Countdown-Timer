@@ -10,13 +10,11 @@ export const ProgressBar = (props) => {
 	);
 };
 
-class ProgressFiller extends React.Component {
-	render() {
-		const percentageWithPercent = this.props.percentage + '%';
-		const backgroundGradient = {background: `linear-gradient(90deg, #28ACF3 ${percentageWithPercent}, transparent ${percentageWithPercent})`};
-		return <div className="progress-child" style={{backgroundGradient}}>{percentageWithPercent}</div>;
-	}
-}
+const ProgressFiller = (props) => {
+	const percentageWithPercent = props.percentage + '%';
+	const backgroundGradient = {background: `linear-gradient(90deg, #28ACF3 ${percentageWithPercent}, transparent ${percentageWithPercent})`};
+	return <div className="progress-child" style={{backgroundGradient}}>{percentageWithPercent}</div>;
+};
 
 ProgressBar.propTypes = {
 	percentage: PropTypes.number.isRequired,
