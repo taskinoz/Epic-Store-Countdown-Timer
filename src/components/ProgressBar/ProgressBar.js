@@ -2,18 +2,35 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './ProgressBar.scss';
 
+const progressBarStyle = {
+	background: '#5E5E5E',
+	borderRadius: 10,
+	overflow: 'hidden'
+};
+
+const progressFillerStyle = {
+	width: '100%',
+	height: '100%',
+	color: 'white',
+	fontSize: 35,
+	fontWeight: '300'
+};
+
 export const ProgressBar = (props) => {
 	return (
-		<div className="progress-parent" style={{height: props.height, width: props.width}}>
-			<ProgressFiller percentage={props.percentage} />
+		<div style={{...progressBarStyle, ...{height: props.height, width: props.width}}}>
+			<ProgressFiller percentage={props.percentage} height={props.height} />
 		</div>
 	);
 };
 
 const ProgressFiller = (props) => {
 	const percentageWithPercent = props.percentage + '%';
-	const backgroundGradient = {background: `linear-gradient(90deg, #28ACF3 ${percentageWithPercent}, transparent ${percentageWithPercent})`};
-	return <div className="progress-child" style={{backgroundGradient}}>{percentageWithPercent}</div>;
+	const backgroundGradient = {
+		background: `linear-gradient(90deg, #28ACF3 ${percentageWithPercent}, transparent ${percentageWithPercent})`,
+		lineHeight: `${props.height}px`
+	};
+	return <div style={{...progressFillerStyle, ...backgroundGradient}}>{percentageWithPercent}</div>;
 };
 
 ProgressBar.propTypes = {
@@ -23,5 +40,6 @@ ProgressBar.propTypes = {
 };
 
 ProgressFiller.propTypes = {
-	percentage: PropTypes.number.isRequired
+	percentage: PropTypes.number.isRequired,
+	height: PropTypes.number.isRequired
 };
