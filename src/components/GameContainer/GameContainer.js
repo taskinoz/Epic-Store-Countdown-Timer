@@ -18,11 +18,11 @@ export class GameContainer extends React.Component {
 		return date.toLocaleDateString('en-AU', {year: '2-digit', day: '2-digit', month: 'short' }).replace(/ /g, '-');
 	}
 
-	gameAvailable(date) {
-		if (typeof date !== 'object') {
+	gameAvailable(releaseDate) {
+		if (typeof releaseDate !== 'object') {
 			return false;
 		}
-		return date <= Date.now();
+		return releaseDate <= Date.now();
 	}
 
 	gamePercentage(epicDate, steamDate) {
@@ -39,6 +39,21 @@ export class GameContainer extends React.Component {
 		}
 	}
 
+	timeTilRelease(releaseDate) {
+		if (typeof releaseDate !== 'object') {
+			return {weeks: '-', days: '-', hours: '-'};
+		}
+		const timeDiff = releaseDate - Date.now();
+		const weeks = ~~(timeDiff / (7 * 24 * 60 * 60 * 1000));
+		const days = ~~(timeDiff/ (60 * 60 * 24) %7);
+		const hours = ~~(timeDiff/ (60 * 60) %24);
+		return {
+			weeks,
+			days,
+			hours
+		};
+	}
+
 	render() {
 		return (
 			<section className="game-container">
@@ -49,9 +64,9 @@ export class GameContainer extends React.Component {
 					<h2>{this.props.name}</h2>
 				</div>
 				<div className="availibility-timer">
-					<TimerBox label="Weeks" number={51} />
-					<TimerBox label="Days" number={6} />
-					<TimerBox label="Hours" number={23} />
+					<TimerBox label="Week" number={this.timeTilRelease(this.props.steamRelease).weeks} />
+					<TimerBox label="Day" number={this.timeTilRelease(this.props.steamRelease).days} />
+					<TimerBox label="Hour" number={this.timeTilRelease(this.props.steamRelease).hours} />
 				</div>
 				<div className="game-dates">
 					<p>Epic <span className="game-release-date">{this.dateFormatter(this.props.epicRelease)}</span></p>
