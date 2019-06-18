@@ -47,7 +47,7 @@
   color: #9f9f9f;
   min-width: 182px;
   font-size: 23px;
-  margin-right: 22px;
+  // margin-right: 22px;
 }
 
 .game-dates p {
@@ -58,6 +58,10 @@
 .game-release-date {
   float: right;
   font-weight: 400;
+}
+
+.game-progress {
+  margin: 0 10px;
 }
 
 .game-links {

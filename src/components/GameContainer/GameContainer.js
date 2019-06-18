@@ -68,12 +68,12 @@ export class GameContainer extends React.Component {
 					<TimerBox label="Day" number={this.timeTilRelease(this.props.steamRelease).days} />
 					<TimerBox label="Hour" number={this.timeTilRelease(this.props.steamRelease).hours} />
 				</div>
+				<div className="game-progress">
+					<ProgressBar percentage={this.gamePercentage(this.props.epicRelease, this.props.steamRelease)} width={159} height={73}/>
+				</div>
 				<div className="game-dates">
 					<p>Epic <span className="game-release-date">{this.dateFormatter(this.props.epicRelease)}</span></p>
 					<p>Steam <span className="game-release-date">{this.dateFormatter(this.props.steamRelease)}</span></p>
-				</div>
-				<div className="game-progress">
-					<ProgressBar percentage={this.gamePercentage(this.props.epicRelease, this.props.steamRelease)} width={159} height={73}/>
 				</div>
 				<div className="game-links">
 					<StoreIcon store='epic' link={this.props.epicLink} available={this.gameAvailable(this.props.epicRelease)} />
