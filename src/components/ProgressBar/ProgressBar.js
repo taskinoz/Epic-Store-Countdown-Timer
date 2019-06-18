@@ -26,11 +26,12 @@ export const ProgressBar = (props) => {
 
 const ProgressFiller = (props) => {
 	const percentageWithPercent = props.percentage + '%';
+	const flooredPercentage = ~~props.percentage + '%';
 	const backgroundGradient = {
 		background: `linear-gradient(90deg, #28ACF3 ${percentageWithPercent}, transparent ${percentageWithPercent})`,
 		lineHeight: `${props.height}px`
 	};
-	return <div style={{...progressFillerStyle, ...backgroundGradient}}>{percentageWithPercent}</div>;
+	return <div style={{...progressFillerStyle, ...backgroundGradient}}>{flooredPercentage}</div>;
 };
 
 ProgressBar.propTypes = {

@@ -19,6 +19,17 @@ export class GameContainer extends React.Component {
 		return date <= Date.now();
 	}
 
+	gamePercentage(epicDate, steamDate) {
+		const percentage = (Date.now() - epicDate) / (steamDate - epicDate) * 100;
+		if (percentage < 0) {
+			return 0;
+		} else if (percentage > 100) {
+			return 100;
+		} else {
+			return percentage;
+		}
+	}
+
 	render() {
 		return (
 			<section className="game-container">
@@ -38,7 +49,7 @@ export class GameContainer extends React.Component {
 					<p>Steam <span className="game-release-date">{this.dateFormatter(this.props.steamRelease)}</span></p>
 				</div>
 				<div className="game-progress">
-					<ProgressBar percentage={75} width={159} height={73}/>
+					<ProgressBar percentage={this.gamePercentage(this.props.epicRelease, this.props.steamRelease)} width={159} height={73}/>
 				</div>
 				<div className="game-links">
 					<StoreIcon store='epic' link={this.props.epicLink} available={this.gameAvailable(this.props.epicRelease)} />
