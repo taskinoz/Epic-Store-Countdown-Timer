@@ -19,12 +19,57 @@
 .game-links{
   padding: 10px;
 }
+
+.game-image img {
+  height: 102px;
+}
+
+.game-info {
+  color: white;
+  text-align: left;
+  min-width: 203px;
+}
+
+.availibility-timer {
+  display: flex;
+}
+
+.availibility-timer * {
+  margin: 0 5px;
+}
+
+.game-dates {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: 300;
+  color: #9f9f9f;
+  min-width: 182px;
+  font-size: 23px;
+}
+
+.game-dates p {
+  margin: 0;
+  width: 100%;
+}
+
+.game-release-date {
+  text-align: right;
+  font-weight: 400;
+}
+
+.game-links {
+  display: flex;
+}
+
 .game-links div{
   display: inline-flex;
   text-align: center;
+  margin: 0 21px;
+  height: 73px;
 }
 
 .game-links img{
-  height: 40px;
+  height: 100%;
   padding: 10px;
 }
