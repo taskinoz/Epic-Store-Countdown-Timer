@@ -18,6 +18,7 @@ function App() {
 			image={game.image}
 			epicRelease={game.epicRelease}
 			steamRelease={game.steamRelease}
+			xboxRelease={game.xboxRelease}
 			epicLink={game.epicLink}
 			steamLink={game.steamLink}
 			xboxLink={game.xboxLink}

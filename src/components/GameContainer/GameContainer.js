@@ -15,6 +15,10 @@ export class GameContainer extends React.Component {
 		return date.toLocaleDateString('en-AU', {year: '2-digit', day: '2-digit', month: 'short' }).replace(/ /g, '-');
 	}
 
+	gameAvailable(date) {
+		return date <= Date.now();
+	}
+
 	render() {
 		return (
 			<section className="game-container">
@@ -37,9 +41,9 @@ export class GameContainer extends React.Component {
 					<ProgressBar percentage={75} width={159} height={73}/>
 				</div>
 				<div className="game-links">
-					<StoreIcon store='epic' link={this.props.epicLink} available={false} />
-					<StoreIcon store='steam' link={this.props.steamLink} available={false} />
-					{this.props.xboxLink !== '' ? <StoreIcon store='xbox' link={this.props.xboxLink} available={false} /> : <div className="empty-icon"></div>}
+					<StoreIcon store='epic' link={this.props.epicLink} available={this.gameAvailable(this.props.epicRelease)} />
+					<StoreIcon store='steam' link={this.props.steamLink} available={this.gameAvailable(this.props.steamRelease)} />
+					{this.props.xboxLink ? <StoreIcon store='xbox' link={this.props.xboxLink} available={this.gameAvailable(this.props.xboxRelease)} /> : <div className="empty-icon"></div>}
 				</div>
 			</section>
 		);
@@ -51,6 +55,7 @@ GameContainer.propTypes = {
 	name: PropTypes.string.isRequired,
 	epicRelease: PropTypes.object.isRequired,
 	steamRelease: PropTypes.object.isRequired,
+	xboxRelease: PropTypes.object.isRequired,
 	epicLink: PropTypes.string.isRequired,
 	steamLink: PropTypes.string.isRequired,
 	xboxLink: PropTypes.string
