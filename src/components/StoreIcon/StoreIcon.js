@@ -8,7 +8,8 @@ import xboxStore from '../../storeicons/xbox_game_pass.png';
 
 export const StoreIcon = (props) => {
 	let imageStyle = {
-		opacity: props.available ? 1 : 0.4
+		opacity: props.available ? 1 : 0.4,
+		height: 73
 	};
 
 	let storeIcon;

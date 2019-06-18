@@ -1,7 +1,7 @@
 .game-container{
   display: flex;
   align-items: center;
-  // margin: 20px 20%;
+  min-width: 1500px;
 }
 @media screen and (max-width: 767px) {
   .game-container{
@@ -68,12 +68,6 @@
   display: inline-flex;
   text-align: center;
   margin: 0 21px;
-  height: 73px;
-}
-
-.game-links img{
-  height: 100%;
-  padding: 10px;
 }
 
 .empty-icon {
