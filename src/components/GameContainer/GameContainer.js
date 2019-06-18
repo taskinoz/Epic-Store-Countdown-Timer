@@ -7,11 +7,7 @@ import './GameContainer.scss';
 // Components
 import { TimerBox } from '../TimerBox/TimerBox';
 import { ProgressBar } from '../ProgressBar/ProgressBar';
-
-// Store Icons
-import epicStore from '../../storeicons/epic_games_store.png';
-import steamStore from '../../storeicons/steam.png';
-import xboxStore from '../../storeicons/xbox_game_pass.png';
+import { StoreIcon } from '../StoreIcon/StoreIcon';
 
 export class GameContainer extends React.Component {
 
@@ -20,12 +16,6 @@ export class GameContainer extends React.Component {
 	}
 
 	render() {
-		const xboxIcon = (<div className="xbox">
-			<a href={this.props.xboxLink} target="_blank" rel="noopener noreferrer">
-				<img src={xboxStore} alt="XBOX Game Pass" />
-			</a>
-		</div>);
-		const emptyIcon = (<div className="empty-icon"></div>);
 		return (
 			<section className="game-container">
 				<div className="game-image">
@@ -47,17 +37,9 @@ export class GameContainer extends React.Component {
 					<ProgressBar percentage={75} width={159} height={73}/>
 				</div>
 				<div className="game-links">
-					<div className="epic">
-						<a href={this.props.epicLink} target="_blank" rel="noopener noreferrer">
-							<img src={epicStore} alt="Epic Games Store" />
-						</a>
-					</div>
-					<div className="steam">
-						<a href={this.props.steamLink} target="_blank" rel="noopener noreferrer">
-							<img src={steamStore} alt="Steam" />
-						</a>
-					</div>
-					{this.props.xboxLink !== '' ? xboxIcon : emptyIcon}
+					<StoreIcon store='epic' link={this.props.epicLink} available={false} />
+					<StoreIcon store='steam' link={this.props.steamLink} available={false} />
+					{this.props.xboxLink !== '' ? <StoreIcon store='xbox' link={this.props.xboxLink} available={false} /> : <div className="empty-icon"></div>}
 				</div>
 			</section>
 		);
