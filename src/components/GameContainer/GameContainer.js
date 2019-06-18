@@ -21,7 +21,7 @@ export class GameContainer extends React.Component {
 
 	render() {
 		const xboxIcon = (<div className="xbox">
-			<a href={this.props.xboxLink}>
+			<a href={this.props.xboxLink} target="_blank" rel="noopener noreferrer">
 				<img src={xboxStore} alt="XBOX Game Pass" />
 			</a>
 		</div>);
@@ -48,12 +48,12 @@ export class GameContainer extends React.Component {
 				</div>
 				<div className="game-links">
 					<div className="epic">
-						<a href={this.props.epicLink}>
+						<a href={this.props.epicLink} target="_blank" rel="noopener noreferrer">
 							<img src={epicStore} alt="Epic Games Store" />
 						</a>
 					</div>
 					<div className="steam">
-						<a href={this.props.steamLink}>
+						<a href={this.props.steamLink} target="_blank" rel="noopener noreferrer">
 							<img src={steamStore} alt="Steam" />
 						</a>
 					</div>
