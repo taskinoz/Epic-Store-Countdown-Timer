@@ -5,7 +5,7 @@ import './TimerBox.scss';
 
 export const TimerBox = (props) => {
 	let label = props.label;
-	if (props.number === 1) {
+	if (props.number !== 1) {
 		label += 's';
 	}
 	return (<div>
