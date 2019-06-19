@@ -90,7 +90,7 @@ GameContainer.propTypes = {
 	name: PropTypes.string.isRequired,
 	epicRelease: PropTypes.object.isRequired,
 	steamRelease: PropTypes.object.isRequired,
-	xboxRelease: PropTypes.object.isRequired,
+	xboxRelease: PropTypes.object,
 	epicLink: PropTypes.string.isRequired,
 	steamLink: PropTypes.string.isRequired,
 	xboxLink: PropTypes.string
