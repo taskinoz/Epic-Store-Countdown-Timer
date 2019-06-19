@@ -2,6 +2,8 @@ import metroExodus from '../gametiles/metro-exodus.jpg';
 import theWalkingDead from '../gametiles/walking-dead.jpg';
 import theOuterWorlds from '../gametiles/the-outer-worlds.jpg';
 import untitledGooseGame from '../gametiles/untitled-goose-game.jpg';
+import whatTheGolf from '../gametiles/what-the-golf.jpg';
+
 
 export const games = [
 	{
@@ -39,5 +41,13 @@ export const games = [
 		steamRelease: 'Unknown',
 		epicLink: 'https://www.epicgames.com/store/en-US/product/untitled-goose-game/home',
 		steamLink: 'https://store.steampowered.com/app/837470/Untitled_Goose_Game/'
+	},
+	{
+		name: 'WHAT THE GOLF?',
+		image: whatTheGolf,
+		epicRelease: 'Unknown',
+		steamRelease: 'Unknown',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/what-the-golf/home',
+		steamLink: 'https://store.steampowered.com/app/785790/WHAT_THE_GOLF/'
 	}
 ];
