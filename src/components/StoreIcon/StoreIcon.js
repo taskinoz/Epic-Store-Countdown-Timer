@@ -38,7 +38,7 @@ export const StoreIcon = (props) => {
 };
 
 StoreIcon.propTypes = {
-	store: PropTypes.string.isRequired,
+	store: PropTypes.oneOf(['steam', 'xbox', 'epic']),
 	link: PropTypes.string.isRequired,
 	available: PropTypes.bool.isRequired
 };
