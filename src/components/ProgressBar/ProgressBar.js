@@ -5,7 +5,6 @@ import './ProgressBar.scss';
 import { useCountUp } from 'react-countup';
 
 const progressBarStyle = {
-	background: '#5E5E5E',
 	borderRadius: 10,
 	overflow: 'hidden'
 };
@@ -31,7 +30,7 @@ const ProgressFiller = (props) => {
 	const percentageWithPercent = props.percentage + '%';
 	const flooredPercentage = ~~props.percentage + '%';
 	const backgroundGradient = {
-		background: `linear-gradient(90deg, #28ACF3 ${percentageWithPercent}, transparent ${percentageWithPercent})`,
+		background: `linear-gradient(90deg, #28ACF3 ${percentageWithPercent}, #5E5E5E ${percentageWithPercent})`,
 		lineHeight: `${props.height}px`
 	};
 	return <div style={{...progressFillerStyle, ...backgroundGradient}}>{flooredPercentage}</div>;
