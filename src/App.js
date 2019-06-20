@@ -24,6 +24,9 @@ function App() {
 			xboxLink={game.xboxLink}
 		/>
 	);
+	gameMap.sort((gameObj, secondGameObj) => {
+		return gameObj.props.steamRelease - secondGameObj.props.steamRelease;
+	});
 	return (
 		<div className="App">
 			<Header />
