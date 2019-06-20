@@ -25,6 +25,9 @@ function App() {
 		/>
 	);
 	gameMap.sort((gameObj, secondGameObj) => {
+		if (typeof gameObj.props.steamRelease === 'string') {
+			return 1;
+		}
 		return gameObj.props.steamRelease - secondGameObj.props.steamRelease;
 	});
 	return (

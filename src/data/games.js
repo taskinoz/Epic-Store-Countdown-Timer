@@ -3,7 +3,12 @@ import theWalkingDead from '../gametiles/walking-dead.jpg';
 import theOuterWorlds from '../gametiles/the-outer-worlds.jpg';
 import untitledGooseGame from '../gametiles/untitled-goose-game.jpg';
 import whatTheGolf from '../gametiles/what-the-golf.jpg';
-
+import ashen from '../gametiles/ashen.jpg';
+import superMeatBoyForever from '../gametiles/super-meat-boy-forever.jpg';
+import operenciaTheStolenSun from '../gametiles/operencia-the-stolen-sun.jpg';
+import maneater from '../gametiles/maneater.jpg';
+import borderlands3 from '../gametiles/borderlands-3.jpg';
+import outerWilds from '../gametiles/outer-wilds.jpg';
 
 export const games = [
 	{
@@ -35,6 +40,54 @@ export const games = [
 		xboxLink: 'https://www.microsoft.com/p/the-outer-worlds/9mwd2z8l1fbq'
 	},
 	{
+		name: 'Ashen',
+		image: ashen,
+		epicRelease: new Date(2018, 11, 7),
+		steamRelease: 'Unknown',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/ashen/home',
+		steamLink: 'https://store.steampowered.com/app/649950/Ashen/'
+	},
+	{
+		name: 'Super Meat Boy Forever',
+		image: superMeatBoyForever,
+		epicRelease: 'Late 2019',
+		steamRelease: '2020',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/super-meat-boy-forever/home',
+		steamLink: 'https://store.steampowered.com/app/581660/Super_Meat_Boy_Forever/'
+	},
+	{
+		name: 'Operencia: The Stolen Sun',
+		image: operenciaTheStolenSun,
+		epicRelease: new Date(2019, 2, 29),
+		steamRelease: '2020',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/operencia/home',
+		steamLink: 'https://store.steampowered.com/app/985950/Operencia_The_Stolen_Sun/'
+	},
+	{
+		name: 'Maneater',
+		image: maneater,
+		epicRelease: '2019',
+		steamRelease: 'Unknown',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/maneater/home',
+		steamLink: 'https://store.steampowered.com/app/629820/Maneater/'
+	},
+	{
+		name: 'Borderlands 3',
+		image: borderlands3,
+		epicRelease: new Date(2019, 8, 13),
+		steamRelease: 'Apr 2020?',
+		epicLink: 'https://epicgames.com/store/en-US/product/borderlands-3/home',
+		steamLink: ''
+	},
+	{
+		name: 'Outer Wilds',
+		image: outerWilds,
+		epicRelease: new Date(2019, 4, 30),
+		steamRelease: 'Unknown',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/outerwilds/home',
+		steamLink: 'https://store.steampowered.com/app/753640/Outer_Wilds/'
+	},
+	{
 		name: 'Untitled Goose Game',
 		image: untitledGooseGame,
 		epicRelease: 'Unknown',
@@ -51,3 +104,16 @@ export const games = [
 		steamLink: 'https://store.steampowered.com/app/785790/WHAT_THE_GOLF/'
 	}
 ];
+
+// Template
+// ,
+// 	{
+// 		name: 'GAME',
+// 		image: imageName,
+// 		epicRelease: new Date(20xx, m, d),
+// 		steamRelease: new Date(20xx, m, d),
+// 		xboxRelease: new Date(20xx, m, d),
+// 		epicLink: 'https://www.epicgames.com/store/en-US/product/',
+// 		steamLink: 'https://store.steampowered.com/app/',
+// 		xboxLink: 'https://www.microsoft.com/p/'
+// 	}

@@ -9,3 +9,5 @@
 - Add animation when loading games
 
 - Mobile design
+
+- Sort games better
