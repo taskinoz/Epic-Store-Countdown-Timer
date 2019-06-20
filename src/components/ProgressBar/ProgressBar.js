@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './ProgressBar.scss';
 
+import { useCountUp } from 'react-countup';
+
 const progressBarStyle = {
 	background: '#5E5E5E',
 	borderRadius: 10,
@@ -17,9 +19,10 @@ const progressFillerStyle = {
 };
 
 export const ProgressBar = (props) => {
+	const { countUp } = useCountUp({end: props.percentage, decimalPlaces: 2}); 
 	return (
 		<div style={{...progressBarStyle, ...{height: props.height, width: props.width}}}>
-			<ProgressFiller percentage={props.percentage} height={props.height} />
+			<ProgressFiller percentage={countUp} height={props.height} />
 		</div>
 	);
 };
