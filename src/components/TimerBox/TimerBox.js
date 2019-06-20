@@ -10,7 +10,14 @@ export const TimerBox = props => {
 	if (props.currentTime !== 1) {
 		label += 's';
 	}
-	let displayNumber = <CountUp className="timer-box-number" duration={3} start={props.initialTime} end={props.currentTime}/>;
+	let displayNumber = (
+		<CountUp
+			className="timer-box-number"
+			duration={3}
+			start={props.initialTime}
+			end={props.currentTime}
+		/>
+	);
 	if (typeof props.currentTime !== 'number') {
 		displayNumber = <p className="timer-box-number">{props.currentTime}</p>;
 	}
@@ -24,6 +31,8 @@ export const TimerBox = props => {
 
 TimerBox.propTypes = {
 	label: PropTypes.string.isRequired,
-	currentTime: PropTypes.number.isRequired,
-	initialTime: PropTypes.number.isRequired
+	currentTime: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+		.isRequired,
+	initialTime: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+		.isRequired
 };
