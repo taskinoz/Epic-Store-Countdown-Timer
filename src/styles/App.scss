@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'global';
+
+.App {
+  text-align: center;
+
+  // Header
+  &-header{
+    background-color: #474747;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.18);
+    z-index: 1;
+    h1{
+      margin-top: 0;
+    }
+    h2{
+      margin-bottom: 0;
+    }
+  }
+
+  // Content
+  #game-containers {
+    background-color: $epicDarkGrey;
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // Footer
+  &-footer{
+    background-color: $epicDarkGrey;
+    color: #626262;
+    font-style: italic;
+    font-size: 30px;
+    padding: 5px 0;
+    background: #474747;
+    p {
+      margin: 5px 0;
+    }
+    a {
+      color: $epicGrey;
+      transition: 0.3s;
+      &:hover {
+        color: $epicLightGrey;
+      }
+    }
+  }
+}
