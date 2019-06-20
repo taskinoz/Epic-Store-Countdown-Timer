@@ -10,12 +10,17 @@ import { ProgressBar } from '../ProgressBar/ProgressBar';
 import { StoreIcon } from '../StoreIcon/StoreIcon';
 
 export class GameContainer extends React.Component {
-
-	dateFormatter (date) {
+	dateFormatter(date) {
 		if (typeof date !== 'object') {
 			return date;
 		}
-		return date.toLocaleDateString('en-AU', {year: '2-digit', day: '2-digit', month: 'short' }).replace(/ /g, '-');
+		return date
+			.toLocaleDateString('en-AU', {
+				year: '2-digit',
+				day: '2-digit',
+				month: 'short'
+			})
+			.replace(/ /g, '-');
 	}
 
 	gameAvailable(releaseDate) {
@@ -29,7 +34,7 @@ export class GameContainer extends React.Component {
 		if (typeof epicDate !== 'object') {
 			return 0;
 		}
-		const percentage = (Date.now() - epicDate) / (steamDate - epicDate) * 100;
+		const percentage = ((Date.now() - epicDate) / (steamDate - epicDate)) * 100;
 		if (percentage < 0) {
 			return 0;
 		} else if (percentage > 100) {
@@ -39,14 +44,14 @@ export class GameContainer extends React.Component {
 		}
 	}
 
-	timeTilRelease(releaseDate) {
+	timeTilRelease(releaseDate, comparisonDate = Date.now()) {
 		if (typeof releaseDate !== 'object') {
-			return {weeks: '-', days: '-', hours: '-'};
+			return { weeks: '-', days: '-', hours: '-' };
 		}
-		const timeDiff = releaseDate - Date.now();
+		const timeDiff = releaseDate - comparisonDate;
 		const weeks = ~~(timeDiff / (7 * 24 * 60 * 60 * 1000));
-		const days = ~~(timeDiff/ (60 * 60 * 24) %7);
-		const hours = ~~(timeDiff/ (60 * 60) %24);
+		const days = ~~((timeDiff / (60 * 60 * 24)) % 7);
+		const hours = ~~((timeDiff / (60 * 60)) % 24);
 		return {
 			weeks,
 			days,
@@ -64,21 +69,66 @@ export class GameContainer extends React.Component {
 					<h2>{this.props.name}</h2>
 				</div>
 				<div className="availibility-timer">
-					<TimerBox label="Week" number={this.timeTilRelease(this.props.steamRelease).weeks} />
-					<TimerBox label="Day" number={this.timeTilRelease(this.props.steamRelease).days} />
-					<TimerBox label="Hour" number={this.timeTilRelease(this.props.steamRelease).hours} />
+					<TimerBox
+						label="Week"
+						initialTime={this.timeTilRelease(this.props.steamRelease, this.props.epicRelease).weeks}
+						currentTime={this.timeTilRelease(this.props.steamRelease).weeks}
+					/>
+					<TimerBox
+						label="Day"
+						initialTime={7}
+						currentTime={this.timeTilRelease(this.props.steamRelease).days}
+					/>
+					<TimerBox
+						label="Hour"
+						initialTime={24}
+						currentTime={this.timeTilRelease(this.props.steamRelease).hours}
+					/>
 				</div>
 				<div className="game-progress">
-					<ProgressBar percentage={this.gamePercentage(this.props.epicRelease, this.props.steamRelease)} width={159} height={73}/>
+					<ProgressBar
+						percentage={this.gamePercentage(
+							this.props.epicRelease,
+							this.props.steamRelease
+						)}
+						width={159}
+						height={73}
+					/>
 				</div>
 				<div className="game-dates">
-					<p>Epic <span className="game-release-date">{this.dateFormatter(this.props.epicRelease)}</span></p>
-					<p>Steam <span className="game-release-date">{this.dateFormatter(this.props.steamRelease)}</span></p>
+					<p>
+						Epic{' '}
+						<span className="game-release-date">
+							{this.dateFormatter(this.props.epicRelease)}
+						</span>
+					</p>
+					<p>
+						Steam{' '}
+						<span className="game-release-date">
+							{this.dateFormatter(this.props.steamRelease)}
+						</span>
+					</p>
 				</div>
 				<div className="game-links">
-					<StoreIcon store='epic' link={this.props.epicLink} available={this.gameAvailable(this.props.epicRelease)} />
-					<StoreIcon store='steam' link={this.props.steamLink} available={this.gameAvailable(this.props.steamRelease)} />
-					{this.props.xboxLink ? <StoreIcon store='xbox' link={this.props.xboxLink} available={this.gameAvailable(this.props.xboxRelease)} /> : <div className="empty-icon"></div>}
+					<StoreIcon
+						store="epic"
+						link={this.props.epicLink}
+						available={this.gameAvailable(this.props.epicRelease)}
+					/>
+					<StoreIcon
+						store="steam"
+						link={this.props.steamLink}
+						available={this.gameAvailable(this.props.steamRelease)}
+					/>
+					{this.props.xboxLink ? (
+						<StoreIcon
+							store="xbox"
+							link={this.props.xboxLink}
+							available={this.gameAvailable(this.props.xboxRelease)}
+						/>
+					) : (
+						<div className="empty-icon" />
+					)}
 				</div>
 			</section>
 		);
@@ -88,9 +138,11 @@ export class GameContainer extends React.Component {
 GameContainer.propTypes = {
 	image: PropTypes.string,
 	name: PropTypes.string.isRequired,
-	epicRelease: PropTypes.object.isRequired,
-	steamRelease: PropTypes.object.isRequired,
-	xboxRelease: PropTypes.object,
+	epicRelease: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
+		.isRequired,
+	steamRelease: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
+		.isRequired,
+	xboxRelease: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 	epicLink: PropTypes.string.isRequired,
 	steamLink: PropTypes.string.isRequired,
 	xboxLink: PropTypes.string
