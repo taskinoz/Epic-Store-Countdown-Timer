@@ -41,6 +41,14 @@ export const games = [
 		xboxLink: 'https://www.microsoft.com/p/the-outer-worlds/9mwd2z8l1fbq'
 	},
 	{
+		name: 'Control',
+		image: control,
+		epicRelease: new Date(2019,7,28),
+		steamRelease: new Date(2020,7,28),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/control/home',
+		steamLink: 'https://store.steampowered.com/app/870780/Control/'
+	},
+	{
 		name: 'Ashen',
 		image: ashen,
 		epicRelease: new Date(2018, 11, 7),
@@ -103,14 +111,6 @@ export const games = [
 		steamRelease: 'Unknown',
 		epicLink: 'https://www.epicgames.com/store/en-US/product/what-the-golf/home',
 		steamLink: 'https://store.steampowered.com/app/785790/WHAT_THE_GOLF/'
-	},
-	{
-		name: 'Control',
-		image: control,
-		epicRelease: new Date(2019,7,28),
-		steamRelease: new Date(2020,7,28),
-		epicLink: 'https://www.epicgames.com/store/en-US/product/control/home',
-		steamLink: 'https://store.steampowered.com/app/870780/Control/'
 	}
 ];
 
