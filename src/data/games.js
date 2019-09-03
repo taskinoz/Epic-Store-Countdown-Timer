@@ -52,7 +52,7 @@ export const games = [
 		name: 'Ashen',
 		image: ashen,
 		epicRelease: new Date(2018, 11, 7),
-		steamRelease: 'Unknown',
+		steamRelease: new Date(2019, 11, 9),
 		epicLink: 'https://www.epicgames.com/store/en-US/product/ashen/home',
 		steamLink: 'https://store.steampowered.com/app/649950/Ashen/'
 	},
@@ -107,8 +107,8 @@ export const games = [
 	{
 		name: 'WHAT THE GOLF?',
 		image: whatTheGolf,
-		epicRelease: 'Unknown',
-		steamRelease: 'Unknown',
+		epicRelease: 'Late 2019',
+		steamRelease: '2020',
 		epicLink: 'https://www.epicgames.com/store/en-US/product/what-the-golf/home',
 		steamLink: 'https://store.steampowered.com/app/785790/WHAT_THE_GOLF/'
 	}
