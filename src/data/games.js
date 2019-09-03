@@ -108,7 +108,7 @@ export const games = [
 		name: 'Control',
 		image: control,
 		epicRelease: new Date(2019,7,28),
-		steamRelease: 'Unknown',
+		steamRelease: new Date(2020,7,28),
 		epicLink: 'https://www.epicgames.com/store/en-US/product/control/home',
 		steamLink: 'https://store.steampowered.com/app/870780/Control/'
 	}
