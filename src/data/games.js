@@ -9,6 +9,7 @@ import operenciaTheStolenSun from '../gametiles/operencia-the-stolen-sun.jpg';
 import maneater from '../gametiles/maneater.jpg';
 import borderlands3 from '../gametiles/borderlands-3.jpg';
 import outerWilds from '../gametiles/outer-wilds.jpg';
+import control from '../gametiles/control.jpg';
 
 export const games = [
 	{
@@ -102,6 +103,14 @@ export const games = [
 		steamRelease: 'Unknown',
 		epicLink: 'https://www.epicgames.com/store/en-US/product/what-the-golf/home',
 		steamLink: 'https://store.steampowered.com/app/785790/WHAT_THE_GOLF/'
+	},
+	{
+		name: 'Control',
+		image: control,
+		epicRelease: new Date(2019,7,28),
+		steamRelease: 'Unknown',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/control/home',
+		steamLink: 'https://store.steampowered.com/app/870780/Control/'
 	}
 ];
 
