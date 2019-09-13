@@ -84,7 +84,7 @@ export const games = [
 		name: 'Borderlands 3',
 		image: borderlands3,
 		epicRelease: new Date(2019, 8, 13),
-		steamRelease: 'Apr 2020?',
+		steamRelease: new Date(2020,3,13),
 		epicLink: 'https://epicgames.com/store/en-US/product/borderlands-3/home',
 		steamLink: ''
 	},
