@@ -13,6 +13,22 @@ import control from '../gametiles/control.jpg';
 
 export const games = [
 	{
+		name: 'Ashen',
+		image: ashen,
+		epicRelease: new Date(2018, 11, 7),
+		steamRelease: new Date(2019, 11, 9),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/ashen/home',
+		steamLink: 'https://store.steampowered.com/app/649950/Ashen/'
+	},
+	{
+		name: 'The Walking Dead: The Final Season',
+		image: theWalkingDead,
+		epicRelease: new Date(2019, 0, 15),
+		steamRelease: new Date(2020, 0, 15),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/walking-dead-final-season/home',
+		steamLink: 'https://store.steampowered.com/app/866800/The_Walking_Dead_The_Final_Season/'
+	},
+	{
 		name: 'Metro Exodus',
 		image: metroExodus,
 		epicRelease: new Date(2019, 1, 15),
@@ -23,12 +39,20 @@ export const games = [
 		xboxLink: 'https://www.microsoft.com/p/metro-exodus-windows/9p60kl3mhcnh'
 	},
 	{
-		name: 'The Walking Dead: The Final Season',
-		image: theWalkingDead,
-		epicRelease: new Date(2019, 0, 15),
-		steamRelease: new Date(2020, 0, 15),
-		epicLink: 'https://www.epicgames.com/store/en-US/product/walking-dead-final-season/home',
-		steamLink: 'https://store.steampowered.com/app/866800/The_Walking_Dead_The_Final_Season/'
+		name: 'Borderlands 3',
+		image: borderlands3,
+		epicRelease: new Date(2019, 8, 13),
+		steamRelease: new Date(2020,3,13),
+		epicLink: 'https://epicgames.com/store/en-US/product/borderlands-3/home',
+		steamLink: ''
+	},
+	{
+		name: 'Control',
+		image: control,
+		epicRelease: new Date(2019,7,28),
+		steamRelease: new Date(2020,7,28),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/control/home',
+		steamLink: 'https://store.steampowered.com/app/870780/Control/'
 	},
 	{
 		name: 'The Outer Worlds',
@@ -41,52 +65,12 @@ export const games = [
 		xboxLink: 'https://www.microsoft.com/p/the-outer-worlds/9mwd2z8l1fbq'
 	},
 	{
-		name: 'Control',
-		image: control,
-		epicRelease: new Date(2019,7,28),
-		steamRelease: new Date(2020,7,28),
-		epicLink: 'https://www.epicgames.com/store/en-US/product/control/home',
-		steamLink: 'https://store.steampowered.com/app/870780/Control/'
-	},
-	{
-		name: 'Ashen',
-		image: ashen,
-		epicRelease: new Date(2018, 11, 7),
-		steamRelease: new Date(2019, 11, 9),
-		epicLink: 'https://www.epicgames.com/store/en-US/product/ashen/home',
-		steamLink: 'https://store.steampowered.com/app/649950/Ashen/'
-	},
-	{
-		name: 'Super Meat Boy Forever',
-		image: superMeatBoyForever,
-		epicRelease: 'Late 2019',
-		steamRelease: '2020',
-		epicLink: 'https://www.epicgames.com/store/en-US/product/super-meat-boy-forever/home',
-		steamLink: 'https://store.steampowered.com/app/581660/Super_Meat_Boy_Forever/'
-	},
-	{
 		name: 'Operencia: The Stolen Sun',
 		image: operenciaTheStolenSun,
 		epicRelease: new Date(2019, 2, 29),
 		steamRelease: '2020',
 		epicLink: 'https://www.epicgames.com/store/en-US/product/operencia/home',
 		steamLink: 'https://store.steampowered.com/app/985950/Operencia_The_Stolen_Sun/'
-	},
-	{
-		name: 'Maneater',
-		image: maneater,
-		epicRelease: '2019',
-		steamRelease: 'Unknown',
-		epicLink: 'https://www.epicgames.com/store/en-US/product/maneater/home',
-		steamLink: 'https://store.steampowered.com/app/629820/Maneater/'
-	},
-	{
-		name: 'Borderlands 3',
-		image: borderlands3,
-		epicRelease: new Date(2019, 8, 13),
-		steamRelease: new Date(2020,3,13),
-		epicLink: 'https://epicgames.com/store/en-US/product/borderlands-3/home',
-		steamLink: ''
 	},
 	{
 		name: 'Outer Wilds',
@@ -99,10 +83,18 @@ export const games = [
 	{
 		name: 'Untitled Goose Game',
 		image: untitledGooseGame,
-		epicRelease: 'Unknown',
+		epicRelease: new Date(2019, 8, 20),
 		steamRelease: 'Unknown',
 		epicLink: 'https://www.epicgames.com/store/en-US/product/untitled-goose-game/home',
 		steamLink: 'https://store.steampowered.com/app/837470/Untitled_Goose_Game/'
+	},
+	{
+		name: 'Super Meat Boy Forever',
+		image: superMeatBoyForever,
+		epicRelease: 'Late 2019',
+		steamRelease: '2020',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/super-meat-boy-forever/home',
+		steamLink: 'https://store.steampowered.com/app/581660/Super_Meat_Boy_Forever/'
 	},
 	{
 		name: 'WHAT THE GOLF?',
@@ -111,6 +103,14 @@ export const games = [
 		steamRelease: '2020',
 		epicLink: 'https://www.epicgames.com/store/en-US/product/what-the-golf/home',
 		steamLink: 'https://store.steampowered.com/app/785790/WHAT_THE_GOLF/'
+	},
+	{
+		name: 'Maneater',
+		image: maneater,
+		epicRelease: '2019',
+		steamRelease: 'Unknown',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/maneater/home',
+		steamLink: 'https://store.steampowered.com/app/629820/Maneater/'
 	}
 ];
 

@@ -24,12 +24,13 @@ function App() {
 			xboxLink={game.xboxLink}
 		/>
 	);
-	gameMap.sort((gameObj, secondGameObj) => {
-		if (typeof gameObj.props.steamRelease === 'string') {
-			return 1;
-		}
-		return gameObj.props.steamRelease - secondGameObj.props.steamRelease;
-	});
+	// Failed sorting method, sample size is small enough to manually sort... so far
+	// gameMap.sort((gameObj, secondGameObj) => {
+	// 	if (typeof gameObj.props.steamRelease === 'string') {
+	// 		return 1;
+	// 	}
+	// 	return gameObj.props.steamRelease - secondGameObj.props.steamRelease;
+	// });
 	return (
 		<div className="App">
 			<Header />
