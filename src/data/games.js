@@ -55,6 +55,22 @@ export const games = [
 		steamLink: 'https://store.steampowered.com/app/870780/Control/'
 	},
 	{
+		name: 'Untitled Goose Game',
+		image: untitledGooseGame,
+		epicRelease: new Date(2019, 8, 20),
+		steamRelease: new Date(2020, 8, 20),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/untitled-goose-game/home',
+		steamLink: 'https://store.steampowered.com/app/837470/Untitled_Goose_Game/'
+	},
+	{
+		name: 'WHAT THE GOLF?',
+		image: whatTheGolf,
+		epicRelease: new Date(2019,9,1),
+		steamRelease: new Date(2020,9,1),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/what-the-golf/home',
+		steamLink: 'https://store.steampowered.com/app/785790/WHAT_THE_GOLF/'
+	},
+	{
 		name: 'The Outer Worlds',
 		image: theOuterWorlds,
 		epicRelease: new Date(2019, 9, 25),
@@ -81,28 +97,12 @@ export const games = [
 		steamLink: 'https://store.steampowered.com/app/753640/Outer_Wilds/'
 	},
 	{
-		name: 'Untitled Goose Game',
-		image: untitledGooseGame,
-		epicRelease: new Date(2019, 8, 20),
-		steamRelease: 'Unknown',
-		epicLink: 'https://www.epicgames.com/store/en-US/product/untitled-goose-game/home',
-		steamLink: 'https://store.steampowered.com/app/837470/Untitled_Goose_Game/'
-	},
-	{
 		name: 'Super Meat Boy Forever',
 		image: superMeatBoyForever,
 		epicRelease: 'Late 2019',
 		steamRelease: '2020',
 		epicLink: 'https://www.epicgames.com/store/en-US/product/super-meat-boy-forever/home',
 		steamLink: 'https://store.steampowered.com/app/581660/Super_Meat_Boy_Forever/'
-	},
-	{
-		name: 'WHAT THE GOLF?',
-		image: whatTheGolf,
-		epicRelease: 'Late 2019',
-		steamRelease: '2020',
-		epicLink: 'https://www.epicgames.com/store/en-US/product/what-the-golf/home',
-		steamLink: 'https://store.steampowered.com/app/785790/WHAT_THE_GOLF/'
 	},
 	{
 		name: 'Maneater',
