@@ -85,8 +85,10 @@ export const games = [
 		image: operenciaTheStolenSun,
 		epicRelease: new Date(2019, 2, 29),
 		steamRelease: '2020',
+		xboxRelease: new Date(2019, 2, 29),
 		epicLink: 'https://www.epicgames.com/store/en-US/product/operencia/home',
-		steamLink: 'https://store.steampowered.com/app/985950/Operencia_The_Stolen_Sun/'
+		steamLink: 'https://store.steampowered.com/app/985950/Operencia_The_Stolen_Sun/',
+		xboxLink: 'https://www.microsoft.com/en-au/p/operencia-the-stolen-sun/9pfkkz5t89nl'
 	},
 	{
 		name: 'Outer Wilds',
@@ -97,20 +99,20 @@ export const games = [
 		steamLink: 'https://store.steampowered.com/app/753640/Outer_Wilds/'
 	},
 	{
+		name: 'Maneater',
+		image: maneater,
+		epicRelease: new Date(2020, 4, 23),
+		steamRelease: 'Unknown',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/maneater/home',
+		steamLink: 'https://store.steampowered.com/app/629820/Maneater/'
+	},
+	{
 		name: 'Super Meat Boy Forever',
 		image: superMeatBoyForever,
 		epicRelease: 'Late 2019',
 		steamRelease: '2021',
 		epicLink: 'https://www.epicgames.com/store/en-US/product/super-meat-boy-forever/home',
 		steamLink: 'https://store.steampowered.com/app/581660/Super_Meat_Boy_Forever/'
-	},
-	{
-		name: 'Maneater',
-		image: maneater,
-		epicRelease: '2019',
-		steamRelease: 'Unknown',
-		epicLink: 'https://www.epicgames.com/store/en-US/product/maneater/home',
-		steamLink: 'https://store.steampowered.com/app/629820/Maneater/'
 	}
 ];
 
