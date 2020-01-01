@@ -109,7 +109,7 @@ export const games = [
 	{
 		name: 'Super Meat Boy Forever',
 		image: superMeatBoyForever,
-		epicRelease: 'Late 2019',
+		epicRelease: '2020',
 		steamRelease: '2021',
 		epicLink: 'https://www.epicgames.com/store/en-US/product/super-meat-boy-forever/home',
 		steamLink: 'https://store.steampowered.com/app/581660/Super_Meat_Boy_Forever/'
