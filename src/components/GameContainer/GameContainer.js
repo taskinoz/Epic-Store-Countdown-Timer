@@ -68,7 +68,7 @@ export class GameContainer extends React.Component {
 				<div className="game-info">
 					<h2>{this.props.name}</h2>
 				</div>
-				<div className="availibility-timer">
+				{this.props.completed ? <a className="completed" href={this.props.steamLink}>Buy from Steam</a> : <div className="availibility-timer">
 					<TimerBox
 						label="Week"
 						initialTime={this.timeTilRelease(this.props.steamRelease, this.props.epicRelease).weeks}
@@ -84,7 +84,7 @@ export class GameContainer extends React.Component {
 						initialTime={24}
 						currentTime={this.timeTilRelease(this.props.steamRelease).hours}
 					/>
-				</div>
+				</div>}
 				<div className="game-progress">
 					<ProgressBar
 						percentage={this.gamePercentage(
@@ -145,5 +145,6 @@ GameContainer.propTypes = {
 	xboxRelease: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 	epicLink: PropTypes.string.isRequired,
 	steamLink: PropTypes.string.isRequired,
-	xboxLink: PropTypes.string
+	xboxLink: PropTypes.string,
+	completed: PropTypes.bool
 };

@@ -16,8 +16,18 @@
 	color: white;
 }
 
+.completed {
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+	min-width: 320px;
+	text-align: center;
+	font-size: 2.3em;
+}
+
 .availibility-timer {
 	display: flex;
+	text-align: center;
 }
 
 .game-dates {
