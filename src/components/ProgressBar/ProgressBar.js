@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './ProgressBar.scss';
 
 import { useCountUp } from 'react-countup';
 
 const progressBarStyle = {
-	borderRadius: 10,
-	overflow: 'hidden'
+	borderRadius: 7,
+	overflow: 'hidden',
+	textAlign: 'center'
 };
 
 const progressFillerStyle = {
