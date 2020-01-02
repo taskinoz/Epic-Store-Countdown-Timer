@@ -1,5 +1,7 @@
 # Epic Games Store Exclusives
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5ffdb66b-8de6-4ec6-9d1d-aa9944d86bad/deploy-status)](https://app.netlify.com/sites/nervous-heyrovsky-64fcbb/deploys)
+
 ## Contributing
 
 
