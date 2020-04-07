@@ -47,6 +47,14 @@ export const games = [
 		steamLink: 'https://store.steampowered.com/app/397540/Borderlands_3/'
 	},
 	{
+		name: 'Outer Wilds',
+		image: outerWilds,
+		epicRelease: new Date(2019, 4, 30),
+		steamRelease: new Date(2020, 5, 18),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/outerwilds/home',
+		steamLink: 'https://store.steampowered.com/app/753640/Outer_Wilds/'
+	},
+	{
 		name: 'Control',
 		image: control,
 		epicRelease: new Date(2019,7,28),
@@ -89,14 +97,6 @@ export const games = [
 		epicLink: 'https://www.epicgames.com/store/en-US/product/operencia/home',
 		steamLink: 'https://store.steampowered.com/app/985950/Operencia_The_Stolen_Sun/',
 		xboxLink: 'https://www.microsoft.com/en-au/p/operencia-the-stolen-sun/9pfkkz5t89nl'
-	},
-	{
-		name: 'Outer Wilds',
-		image: outerWilds,
-		epicRelease: new Date(2019, 4, 30),
-		steamRelease: new Date(2020, 5, 18),
-		epicLink: 'https://www.epicgames.com/store/en-US/product/outerwilds/home',
-		steamLink: 'https://store.steampowered.com/app/753640/Outer_Wilds/'
 	},
 	{
 		name: 'Maneater',
