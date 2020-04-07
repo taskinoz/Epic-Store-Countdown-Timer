@@ -44,7 +44,7 @@ export const games = [
 		epicRelease: new Date(2019, 8, 13),
 		steamRelease: new Date(2020,2,13),
 		epicLink: 'https://epicgames.com/store/en-US/product/borderlands-3/home',
-		steamLink: ''
+		steamLink: 'https://store.steampowered.com/app/397540/Borderlands_3/'
 	},
 	{
 		name: 'Control',
