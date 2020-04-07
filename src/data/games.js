@@ -84,7 +84,7 @@ export const games = [
 		name: 'Operencia: The Stolen Sun',
 		image: operenciaTheStolenSun,
 		epicRelease: new Date(2019, 2, 29),
-		steamRelease: '2020',
+		steamRelease: new Date(2020, 2, 31),
 		xboxRelease: new Date(2019, 2, 29),
 		epicLink: 'https://www.epicgames.com/store/en-US/product/operencia/home',
 		steamLink: 'https://store.steampowered.com/app/985950/Operencia_The_Stolen_Sun/',
@@ -94,7 +94,7 @@ export const games = [
 		name: 'Outer Wilds',
 		image: outerWilds,
 		epicRelease: new Date(2019, 4, 30),
-		steamRelease: 'Unknown',
+		steamRelease: new Date(2020, 5, 18),
 		epicLink: 'https://www.epicgames.com/store/en-US/product/outerwilds/home',
 		steamLink: 'https://store.steampowered.com/app/753640/Outer_Wilds/'
 	},
