@@ -10,6 +10,7 @@ import maneater from '../gametiles/maneater.jpg';
 import borderlands3 from '../gametiles/borderlands-3.jpg';
 import outerWilds from '../gametiles/outer-wilds.jpg';
 import control from '../gametiles/control.jpg';
+import satisfactory from '../gametiles/satisfactory.jpg';
 
 export const games = [
 	{
@@ -113,6 +114,14 @@ export const games = [
 		steamRelease: '2021',
 		epicLink: 'https://www.epicgames.com/store/en-US/product/super-meat-boy-forever/home',
 		steamLink: 'https://store.steampowered.com/app/581660/Super_Meat_Boy_Forever/'
+	},
+	{
+		name: 'Satisfactory',
+		image: satisfactory,
+		epicRelease: new Date(2020, 4, 19),
+		steamRelease: new Date(2020, 5, 8),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/satisfactory/home',
+		steamLink: 'https://store.steampowered.com/app/526870/Satisfactory/'
 	}
 ];
 
