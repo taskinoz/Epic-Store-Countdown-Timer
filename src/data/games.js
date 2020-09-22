@@ -11,6 +11,15 @@ import borderlands3 from '../gametiles/borderlands-3.jpg';
 import outerWilds from '../gametiles/outer-wilds.jpg';
 import control from '../gametiles/control.jpg';
 import satisfactory from '../gametiles/satisfactory.jpg';
+import anno from '../gametiles/anno-1800.jpg';
+import arise from '../gametiles/arise.jpg';
+import atomicrops from '../gametiles/atomicrops.jpg';
+import beesim from '../gametiles/bee-simulator.jpg';
+import bloodroots from '../gametiles/bloodroots.jpg';
+import cardpocalypse from '../gametiles/cardpocalypse.jpg';
+import chivalry2 from '../gametiles/chivalry-2.jpg';
+import foregone from '../gametiles/foregone.jpg';
+import huntdown from '../gametiles/huntdown.jpg';
 
 export const games = [
 	{
@@ -67,7 +76,7 @@ export const games = [
 		name: 'Untitled Goose Game',
 		image: untitledGooseGame,
 		epicRelease: new Date(2019, 8, 20),
-		steamRelease: new Date(2020, 8, 20),
+		steamRelease: new Date(2020, 8, 24),
 		epicLink: 'https://www.epicgames.com/store/en-US/product/untitled-goose-game/home',
 		steamLink: 'https://store.steampowered.com/app/837470/Untitled_Goose_Game/'
 	},
@@ -122,6 +131,77 @@ export const games = [
 		steamRelease: new Date(2020, 5, 8),
 		epicLink: 'https://www.epicgames.com/store/en-US/product/satisfactory/home',
 		steamLink: 'https://store.steampowered.com/app/526870/Satisfactory/'
+	},
+	{
+		name: 'Anno 1800',
+		image: anno,
+		epicRelease: new Date(2019, 4, 20),
+		steamRelease: 'Unknown',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/anno-1800/home',
+		steamLink: 'https://store.steampowered.com/app/916440/Anno_1800/'
+	},
+	{
+		name: 'Arise: A Simple Story',
+		image: arise,
+		epicRelease: new Date(2019, 11, 4),
+		steamRelease: new Date(2020, 11, 4),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/arise-a-simple-story/home',
+		steamLink: 'https://store.steampowered.com/app/866140/Arise_A_Simple_Story/'
+	},
+	{
+		name: 'Atomicrops',
+		image: atomicrops,
+		epicRelease: new Date(2020, 4, 29),
+		steamRelease: new Date(2020, 8, 17),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/atomicrops/home',
+		steamLink: 'https://store.steampowered.com/app/757320/Atomicrops/'
+	},
+	{
+		name: 'Bee Simulator',
+		image: beesim,
+		epicRelease: new Date(2019, 10, 15),
+		steamRelease: new Date(2020, 10, 15),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/bee-simulator/home',
+		steamLink: 'https://store.steampowered.com/app/914750/Bee_Simulator/'
+	},
+	{
+		name: 'Bloodroots',
+		image: bloodroots,
+		epicRelease: new Date(2020, 1, 29),
+		steamRelease: new Date(2021, 1, 29),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/bloodroots/home',
+		steamLink: 'https://store.steampowered.com/app/820540/Bloodroots/'
+	},
+	{
+		name: 'Cardpocalypse',
+		image: cardpocalypse,
+		epicRelease: new Date(2019, 8, 19),
+		steamRelease: new Date(2020, 11, 19),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/cardpocalypse/home',
+		steamLink: 'https://store.steampowered.com/app/904400/Cardpocalypse/'
+	},
+	{
+		name: 'Chivalry 2',
+		image: chivalry2,
+		epicRelease: '2021',
+		steamRelease: '2022',
+		epicLink: 'https://www.epicgames.com/store/en-US/product/chivalry-2/home'
+	},
+	{
+		name: 'Foregone',
+		image: foregone,
+		epicRelease: new Date(2020, 2, 1),
+		steamRelease: new Date(2021, 2, 1),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/foregone/home',
+		steamLink: 'https://store.steampowered.com/app/1000760/Foregone/'
+	},
+	{
+		name: 'Huntdown',
+		image: huntdown,
+		epicRelease: new Date(2020, 4, 13),
+		steamRelease: new Date(2021, 4, 12),
+		epicLink: 'https://www.epicgames.com/store/en-US/product/huntdown/home',
+		steamLink: 'https://store.steampowered.com/app/598550/HUNTDOWN/'
 	}
 ];
 
