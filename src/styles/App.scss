@@ -1,8 +1,8 @@
-@import 'variables';
-@import 'global';
+@use 'variables';
+@use 'global';
 
 .App {
-  background-color: $epicDarkGrey;
+  background-color: variables.$epicDarkGrey;
 
   // Header
   &-header{
@@ -42,7 +42,7 @@
 
   // Footer
   &-footer{
-    background-color: $epicDarkGrey;
+    background-color: variables.$epicDarkGrey;
     text-align: center;
     color: #626262;
     font-style: italic;
@@ -52,10 +52,10 @@
       margin: 5px 0;
     }
     a {
-      color: $epicGrey;
+      color: variables.$epicGrey;
       transition: 0.3s;
       &:hover {
-        color: $epicLightGrey;
+        color: variables.$epicLightGrey;
       }
     }
   }

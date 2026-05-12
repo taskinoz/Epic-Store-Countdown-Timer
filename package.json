@@ -8,19 +8,12 @@
     "react": "^16.12.0",
     "react-countup": "^4.3.1",
     "react-dom": "^16.12.0",
-    "react-scripts": "^5.0.1",
     "sass": "^1.49.9"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts --openssl-legacy-provider test",
-    "eject": "react-scripts --openssl-legacy-provider eject",
-    "lint": "eslint src/**/*.js",
-    "lint-fix": "eslint src/**/*.js --fix"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "browserslist": {
     "production": [
@@ -33,5 +26,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.12"
   }
 }
