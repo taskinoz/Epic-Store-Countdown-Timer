@@ -1,0 +1,206 @@
+[
+	{
+		"name": "Ashen",
+		"image": "ashen.jpg",
+		"steamAppId": 649950,
+		"epicRelease": "2018-12-07",
+		"steamRelease": "2019-12-09",
+		"epicLink": "https://store.epicgames.com/en-US/p/ashen",
+		"steamLink": "https://store.steampowered.com/app/649950/Ashen/"
+	},
+	{
+		"name": "The Walking Dead: The Final Season",
+		"image": "walking-dead.jpg",
+		"steamAppId": 866800,
+		"epicRelease": "2019-01-15",
+		"steamRelease": "2020-01-15",
+		"epicLink": "https://store.epicgames.com/en-US/p/walking-dead-final-season",
+		"steamLink": "https://store.steampowered.com/app/866800/The_Walking_Dead_The_Final_Season/"
+	},
+	{
+		"name": "Metro Exodus",
+		"image": "metro-exodus.jpg",
+		"steamAppId": 412020,
+		"epicRelease": "2019-02-15",
+		"steamRelease": "2020-02-15",
+		"xboxRelease": "2019-02-15",
+		"epicLink": "https://store.epicgames.com/en-US/p/metro-exodus",
+		"steamLink": "https://store.steampowered.com/app/412020/Metro_Exodus/",
+		"xboxLink": "https://www.microsoft.com/p/metro-exodus-windows/9p60kl3mhcnh"
+	},
+	{
+		"name": "Satisfactory",
+		"image": "satisfactory.jpg",
+		"steamAppId": 526870,
+		"epicRelease": "2019-03-19",
+		"steamRelease": "2020-06-08",
+		"epicLink": "https://store.epicgames.com/en-US/p/satisfactory",
+		"steamLink": "https://store.steampowered.com/app/526870/Satisfactory/"
+	},
+	{
+		"name": "Operencia: The Stolen Sun",
+		"image": "operencia-the-stolen-sun.jpg",
+		"steamAppId": 985950,
+		"epicRelease": "2019-03-29",
+		"steamRelease": "2020-03-31",
+		"xboxRelease": "2019-03-29",
+		"epicLink": "https://store.epicgames.com/en-US/p/operencia",
+		"steamLink": "https://store.steampowered.com/app/985950/Operencia_The_Stolen_Sun/",
+		"xboxLink": "https://www.microsoft.com/en-au/p/operencia-the-stolen-sun/9pfkkz5t89nl"
+	},
+	{
+		"name": "Anno 1800",
+		"image": "anno-1800.jpg",
+		"steamAppId": 916440,
+		"epicRelease": "2019-04-16",
+		"steamRelease": "2022-12-08",
+		"epicLink": "https://store.epicgames.com/en-US/p/anno-1800",
+		"steamLink": "https://store.steampowered.com/app/916440/Anno_1800/"
+	},
+	{
+		"name": "Atomicrops",
+		"image": "atomicrops.jpg",
+		"steamAppId": 757320,
+		"epicRelease": "2019-05-29",
+		"steamRelease": "2020-09-17",
+		"epicLink": "https://store.epicgames.com/en-US/p/atomicrops",
+		"steamLink": "https://store.steampowered.com/app/757320/Atomicrops/"
+	},
+	{
+		"name": "Outer Wilds",
+		"image": "outer-wilds.jpg",
+		"steamAppId": 753640,
+		"epicRelease": "2019-05-30",
+		"steamRelease": "2020-06-18",
+		"epicLink": "https://store.epicgames.com/en-US/p/outerwilds",
+		"steamLink": "https://store.steampowered.com/app/753640/Outer_Wilds/"
+	},
+	{
+		"name": "Control",
+		"image": "control.jpg",
+		"steamAppId": 870780,
+		"epicRelease": "2019-08-27",
+		"steamRelease": "2020-08-27",
+		"epicLink": "https://store.epicgames.com/en-US/p/control",
+		"steamLink": "https://store.steampowered.com/app/870780/Control/"
+	},
+	{
+		"name": "Borderlands 3",
+		"image": "borderlands-3.jpg",
+		"steamAppId": 397540,
+		"epicRelease": "2019-09-13",
+		"steamRelease": "2020-03-13",
+		"epicLink": "https://store.epicgames.com/en-US/p/borderlands-3",
+		"steamLink": "https://store.steampowered.com/app/397540/Borderlands_3/"
+	},
+	{
+		"name": "Cardpocalypse",
+		"image": "cardpocalypse.jpg",
+		"steamAppId": 904400,
+		"epicRelease": "2019-09-19",
+		"steamRelease": "2020-12-19",
+		"epicLink": "https://store.epicgames.com/en-US/p/cardpocalypse",
+		"steamLink": "https://store.steampowered.com/app/904400/Cardpocalypse/"
+	},
+	{
+		"name": "Untitled Goose Game",
+		"image": "untitled-goose-game.jpg",
+		"steamAppId": 837470,
+		"epicRelease": "2019-09-20",
+		"steamRelease": "2020-09-24",
+		"epicLink": "https://store.epicgames.com/en-US/p/untitled-goose-game",
+		"steamLink": "https://store.steampowered.com/app/837470/Untitled_Goose_Game/"
+	},
+	{
+		"name": "WHAT THE GOLF?",
+		"image": "what-the-golf.jpg",
+		"steamAppId": 785790,
+		"epicRelease": "2019-10-01",
+		"steamRelease": "2020-10-01",
+		"epicLink": "https://store.epicgames.com/en-US/p/what-the-golf",
+		"steamLink": "https://store.steampowered.com/app/785790/WHAT_THE_GOLF/"
+	},
+	{
+		"name": "The Outer Worlds",
+		"image": "the-outer-worlds.jpg",
+		"steamAppId": 578650,
+		"epicRelease": "2019-10-25",
+		"steamRelease": "2020-10-23",
+		"xboxRelease": "2019-10-25",
+		"epicLink": "https://store.epicgames.com/en-US/p/the-outer-worlds",
+		"steamLink": "https://store.steampowered.com/app/578650/The_Outer_Worlds/",
+		"xboxLink": "https://www.microsoft.com/p/the-outer-worlds/9mwd2z8l1fbq"
+	},
+	{
+		"name": "Bee Simulator",
+		"image": "bee-simulator.jpg",
+		"steamAppId": 914750,
+		"epicRelease": "2019-11-15",
+		"steamRelease": "2020-11-15",
+		"epicLink": "https://store.epicgames.com/en-US/p/bee-simulator",
+		"steamLink": "https://store.steampowered.com/app/914750/Bee_Simulator/"
+	},
+	{
+		"name": "Arise: A Simple Story",
+		"image": "arise.jpg",
+		"steamAppId": 866140,
+		"epicRelease": "2019-12-03",
+		"steamRelease": "2020-12-04",
+		"epicLink": "https://store.epicgames.com/en-US/p/arise-a-simple-story",
+		"steamLink": "https://store.steampowered.com/app/866140/Arise_A_Simple_Story/"
+	},
+	{
+		"name": "Bloodroots",
+		"image": "bloodroots.jpg",
+		"steamAppId": 820540,
+		"epicRelease": "2020-02-28",
+		"steamRelease": "2021-03-01",
+		"epicLink": "https://store.epicgames.com/en-US/p/bloodroots",
+		"steamLink": "https://store.steampowered.com/app/820540/Bloodroots/"
+	},
+	{
+		"name": "Foregone",
+		"image": "foregone.jpg",
+		"steamAppId": 1000760,
+		"epicRelease": "2020-02-27",
+		"steamRelease": "2021-03-01",
+		"epicLink": "https://store.epicgames.com/en-US/p/foregone",
+		"steamLink": "https://store.steampowered.com/app/1000760/Foregone/"
+	},
+	{
+		"name": "Huntdown",
+		"image": "huntdown.jpg",
+		"steamAppId": 598550,
+		"epicRelease": "2020-05-12",
+		"steamRelease": "2021-05-12",
+		"epicLink": "https://store.epicgames.com/en-US/p/huntdown",
+		"steamLink": "https://store.steampowered.com/app/598550/HUNTDOWN/"
+	},
+	{
+		"name": "Maneater",
+		"image": "maneater.jpg",
+		"steamAppId": 629820,
+		"epicRelease": "2020-05-22",
+		"steamRelease": "2021-05-25",
+		"epicLink": "https://store.epicgames.com/en-US/p/maneater",
+		"steamLink": "https://store.steampowered.com/app/629820/Maneater/"
+	},
+	{
+		"name": "Super Meat Boy Forever",
+		"image": "super-meat-boy-forever.jpg",
+		"steamAppId": 581660,
+		"epicRelease": "2020-12-23",
+		"steamRelease": "2022-01-10",
+		"epicLink": "https://store.epicgames.com/en-US/p/super-meat-boy-forever",
+		"steamLink": "https://store.steampowered.com/app/581660/Super_Meat_Boy_Forever/"
+	},
+	{
+		"name": "Chivalry 2",
+		"image": "chivalry-2.jpg",
+		"steamAppId": 1824220,
+		"epicRelease": "2021-06-08",
+		"steamRelease": "2022-06-12",
+		"epicLink": "https://store.epicgames.com/en-US/p/chivalry-2",
+		"steamLink": "https://store.steampowered.com/app/1824220/Chivalry_2/"
+	}
+]

@@ -3,31 +3,29 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "eslint": "^10.6.0",
-    "react": "^16.14.0",
-    "react-countup": "^4.4.0",
-    "react-dom": "^16.14.0",
-    "sass": "^1.101.0"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "update-games": "node scripts/update-games.js"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6.0.3",
-    "vite": "^8.3.5"
+    "@eslint/js": "^10.0.1",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.13.0",
+    "sass": "^1.107.0",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
   }
 }

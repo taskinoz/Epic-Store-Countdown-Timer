@@ -1,10 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
 // Store Icons
 import epicStore from '../../storeicons/epic_games_store.png';
 import steamStore from '../../storeicons/steam.png';
 import xboxStore from '../../storeicons/xbox_game_pass.png';
+
+const altText = {
+	epic: 'Epic Games Store',
+	steam: 'Steam',
+	xbox: 'Xbox Game Pass'
+};
 
 export const StoreIcon = (props) => {
 	let imageStyle = {
@@ -31,14 +34,8 @@ export const StoreIcon = (props) => {
 	return (
 		<div className="store-icon">
 			<a href={props.link} target="_blank" rel="noopener noreferrer">
-				<img src={storeIcon} alt="Epic Games Store" style={imageStyle} />
+				<img src={storeIcon} alt={altText[props.store]} style={imageStyle} />
 			</a>
 		</div>
 	);
-};
-
-StoreIcon.propTypes = {
-	store: PropTypes.oneOf(['steam', 'xbox', 'epic']),
-	link: PropTypes.string.isRequired,
-	available: PropTypes.bool.isRequired
 };
