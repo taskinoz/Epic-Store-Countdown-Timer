@@ -10,7 +10,7 @@
 
 - Mobile design
 
-- Sort games better
+- Sort games better (done: sorted by Steam release)
 
 ## Sources
 

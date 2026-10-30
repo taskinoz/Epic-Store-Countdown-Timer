@@ -1,9 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-import CountUp from 'react-countup';
+import { useCountUp } from '../../hooks/useCountUp';
 
 import './TimerBox.scss';
+
+const CountUp = ({ start, end }) => {
+	const value = useCountUp(end, { start, duration: 3000 });
+	return <span className="timer-box-number">{Math.round(value)}</span>;
+};
 
 export const TimerBox = props => {
 	let label = props.label;
@@ -12,9 +14,7 @@ export const TimerBox = props => {
 	}
 	let displayNumber = (
 		<CountUp
-			className="timer-box-number"
-			duration={3}
-			start={props.initialTime}
+			start={typeof props.initialTime === 'number' ? props.initialTime : 0}
 			end={props.currentTime}
 		/>
 	);
@@ -27,12 +27,4 @@ export const TimerBox = props => {
 			<p className="timer-box-label">{label}</p>
 		</div>
 	);
-};
-
-TimerBox.propTypes = {
-	label: PropTypes.string.isRequired,
-	currentTime: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
-		.isRequired,
-	initialTime: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
-		.isRequired
 };
